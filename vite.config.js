@@ -1,11 +1,14 @@
 import { defineConfig } from 'vite'
 import { crx, defineManifest } from '@crxjs/vite-plugin'
+import { version } from './package.json'
+
+console.log('PackageJson', version)
 
 const manifest = defineManifest({
     manifest_version: 3,
-    name: 'Reading time',
-    description: 'Add the reading time to Chrome Extension documentation articles',
-    version: '1.0',
+    name: 'Scrapbox Extension',
+    description: 'Scrapbox Extension',
+    version: version,
     // icons: {
     //     '16': 'images/icon-16.png',
     //     '32': 'images/icon-32.png',
@@ -14,10 +17,9 @@ const manifest = defineManifest({
     // },
     content_scripts: [
         {
-            js: ['scripts/content.ts'], // 拡張子を .ts に変更する
+            js: ['scripts/content.ts'],
             matches: [
-                'https://developer.chrome.com/docs/extensions/*',
-                'https://developer.chrome.com/docs/webstore/*',
+                'https://scrapbox.io/katayama8000/*',
             ]
         }
     ],

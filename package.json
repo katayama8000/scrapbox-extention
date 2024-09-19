@@ -1,9 +1,9 @@
 {
-  "name": "chrome-extention-typescript-template",
-  "version": "1.0.0",
-  "description": "chrome-extention",
+  "name": "scrapbox-extention",
+  "version": "1.0",
+  "description": "Scrapbox Extention",
   "main": "index.js",
-  "repository": "https://github.com/katayama8000/chrome-extention-typescript-template.git",
+  "repository": "https://github.com/katayama8000/scrapbox-extention",
   "author": "katayama800 <tattu.0310@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -14,7 +14,7 @@
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.14",
     "@types/chrome": "^0.0.204",
-    "typescript": "^4.9.4",
+    "typescript": "^5.6.2",
     "vite": "^2.9.4"
   }
 }
