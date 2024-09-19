@@ -1,0 +1,20 @@
+{
+  "name": "chrome-extention-typescript-template",
+  "version": "1.0.0",
+  "description": "chrome-extention",
+  "main": "index.js",
+  "repository": "https://github.com/katayama8000/chrome-extention-typescript-template.git",
+  "author": "katayama800 <tattu.0310@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^1.0.14",
+    "@types/chrome": "^0.0.204",
+    "typescript": "^4.9.4",
+    "vite": "^2.9.4"
+  }
+}
