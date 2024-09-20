@@ -9,12 +9,12 @@ const manifest = defineManifest({
     name: 'Scrapbox Extension',
     description: 'Scrapbox Extension',
     version: version,
-    // icons: {
-    //     '16': 'images/icon-16.png',
-    //     '32': 'images/icon-32.png',
-    //     '48': 'images/icon-48.png',
-    //     '128': 'images/icon-128.png',
-    // },
+    icons: {
+        '16': 'images/Scrapbox.png',
+        '32': 'images/Scrapbox.png',
+        '48': 'images/Scrapbox.png',
+        '128': 'images/Scrapbox.png',
+    },
     content_scripts: [
         {
             js: ['scripts/content.ts'],
